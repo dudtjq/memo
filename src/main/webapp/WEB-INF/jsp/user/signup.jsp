@@ -30,6 +30,8 @@
 				<input type="text" placeholder="이름" class="form-control mt-2" id="nameInput">
 				<input type="text" placeholder="이메일" class="form-control mt-2" id="emailInput">
 				<button type="button" class="bg-info text-white mt-3 form-control" id="joinBtn">가입</button>
+				
+				
 			</div>
 		</section>
 		
