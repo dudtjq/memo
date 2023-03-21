@@ -26,7 +26,7 @@
 				<h1 class="text-center pt-1">회원 가입</h1>
 				<input type="text" placeholder="로그인 ID" class="form-control mt-4" id="loginIdInput">
 				<input type="password" placeholder="비밀번호" class="form-control mt-2" id="passwordInput">
-				<button type="button" class="bg-info text-white mt-3 form-control" id="loginBtn">가입</button>
+				<button type="button" class="bg-info text-white mt-3 form-control" id="loginBtn">로그인</button>
 				<div class="text-center mt-2">
 					<a href="/user/signup/view">회원 가입</a>
 				</div>
@@ -44,10 +44,10 @@
 			
 			$("#loginBtn").on("click", function(){
 				
-				let loginId = $("#loginIdInput").val();
+				let id = $("#loginIdInput").val();
 				let password = $("#passwordInput").val();
 			 	
-			 	if(loginId == ""){
+			 	if(id == ""){
 			 		alert("아이디를 입력하세요");
 			 		return;
 			 	}
@@ -61,11 +61,11 @@
 			 		
 			 		type:"post"
 			 		, url:"/user/signin"
-			 		, data:{"loginId":loginId, "password":password}
+			 		, data:{"loginId":id, "password":password}
 			 		, success:function(data){
 			 			
 			 			if(data.result == "success"){
-			 				alert("로그인 성공");
+			 				location.href="/post/list/view"
 			 			}else{
 			 				alert("아이디와 비밀번호를 확인 해주세요.");
 			 			}
