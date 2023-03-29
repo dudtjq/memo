@@ -19,7 +19,7 @@
 
 	<div id="wrap">
 	
-		<c:import url="/WEB-INF/jsp/same/header.jsp" />
+		<c:import url="/WEB-INF/jsp/include/header.jsp" />
 		
 		<section class="contents d-flex justify-content-center">
 			<div class="join-box my-5">
@@ -34,7 +34,7 @@
 			</div>
 		</section>
 		
-		<c:import url="/WEB-INF/jsp/same/footer.jsp" />
+		<c:import url="/WEB-INF/jsp/include/footer.jsp" />
 	
 	</div>
 	

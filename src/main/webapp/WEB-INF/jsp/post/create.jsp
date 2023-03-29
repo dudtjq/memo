@@ -18,7 +18,7 @@
 <body>
 	<div id="wrap">
 	
-		<c:import url="/WEB-INF/jsp/same/header.jsp" />
+		<c:import url="/WEB-INF/jsp/include/header.jsp" />
 		
 			<section class="d-flex justify-content-center">
 			<div class="input-box my-5">
@@ -40,7 +40,7 @@
 			</div>
 		</section>
 		
-		<c:import url="/WEB-INF/jsp/same/footer.jsp" />
+		<c:import url="/WEB-INF/jsp/include/footer.jsp" />
 		
 	
 	</div>
@@ -57,7 +57,7 @@
 					return ;
 				}
 				
-				if(content == "") {
+				if(content.trim() == "") {
 					alert("내용을 입력하세요");
 					return ;
 				}
