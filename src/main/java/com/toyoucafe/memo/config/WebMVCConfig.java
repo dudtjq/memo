@@ -23,8 +23,8 @@ public class WebMVCConfig implements WebMvcConfigurer {
 	public void addInterceptors(InterceptorRegistry registry) {
 		PermissonInterceptor interceptor = new PermissonInterceptor();
 		
-		registry.addInterceptor(interceptor);
-		.addPathPatterns("/**"); // 인터셉터를 거쳐서 처리할 페이지의 url 규칙
+		registry.addInterceptor(interceptor)
+		.addPathPatterns("/**") // 인터셉터를 거쳐서 처리할 페이지의 url 규칙
 		.excludePathPatterns("/user/signout", "/static/**", "/images/**");
 	}
 	
