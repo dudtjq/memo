@@ -41,7 +41,8 @@ public class PostBO {
 	public int deletePost(int postId) {
 		
 		Post post = postDAO.selectPost(postId);
-		post.getImagePath();
+		FileManagerService.removeFile(post.getImagePath());
+		
 		
 		return postDAO.deletePost(postId);
 		
